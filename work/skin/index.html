@@ -3,15 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dew Skin Clinic - Facials and skin treatments, Melbourne</title>
-<meta name="description" content="Skin, but glowing.">
+<title>The Glow Room | Facials and skin treatments in Carlton</title>
+<meta name="description" content="Facials and skin treatments in Carlton, Melbourne.">
 <meta name="theme-color" content="#FCF3EC">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="preload" href="/fonts/dm-serif-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-ext-400-italic.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-400-italic.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 300; src: url(/fonts/inter-latin-ext-300-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 300; src: url(/fonts/inter-latin-300-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-ext-500-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-ext-600-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-ext-700-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}body{margin:0;overflow-x:clip}img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
@@ -64,29 +77,29 @@ footer{border-top:1px solid #E7C9B8;padding:30px 0 90px;display:flex;justify-con
 </head>
 <body>
 <div class="wrap">
-<nav><a class="logo" href="#">Dew <small>Skin Clinic</small></a><div class="links"><a href="#treatments">Treatments</a><a href="#visit">Your visit</a><a class="btn" href="#book">Book</a></div></nav>
+<nav><a class="logo" href="#">The Glow Room <small>Skin Clinic</small></a><div class="links"><a href="#treatments">Treatments</a><a href="#visit">Your visit</a><a class="btn" href="#book">Book</a></div></nav>
 <section class="hero">
  <div><h1 class="serif">Skin, but<br><i>glowing</i>.</h1><p>Facials and skin treatments that bring back your natural glow. Gentle, results-led and made for your skin.</p><a class="btn" href="#book" style="animation:up 1.3s .3s both">Book a skin consultation</a></div>
- <div class="archwrap"><div class="arch ph"><img src="../img/skin-hero.webp" alt="Woman with dewy glowing skin and closed eyes"></div></div>
+ <div class="archwrap"><div class="arch ph"><img fetchpriority="high" decoding="async" src="../img/skin-hero.webp" alt="Woman with dewy glowing skin and closed eyes"></div></div>
 </section>
 </div>
 <section class="sec" id="treatments" style="background:#FAE9DD"><div class="wrap">
  <h2 class="h2 serif r">Treatments</h2>
  <div class="tr">
-  <figure class="r"><div class="ph"><img src="../img/skin-1.webp" alt="Esthetician applying a peach clay mask with a brush" loading="lazy"></div><h3>Signature facial</h3><p>Cleanse, exfoliate, mask and massage for instant radiance.</p><span>60 min</span></figure>
-  <figure class="r" style="transition-delay:.1s"><div class="ph"><img src="../img/skin-mask.webp" alt="Client relaxing during a peach clay mask" loading="lazy"></div><h3>Glow peel</h3><p>A gentle enzyme peel that smooths texture and brightens.</p><span>45 min</span></figure>
-  <figure class="r" style="transition-delay:.2s"><div class="ph"><img src="../img/skin-2.webp" alt="Glass serum bottles on peach stone" loading="lazy"></div><h3>Hydration boost</h3><p>Layered serums and LED light for deeply plump skin.</p><span>50 min</span></figure>
+  <figure class="r"><div class="ph"><img decoding="async" src="../img/skin-1.webp" alt="Esthetician applying a peach clay mask with a brush" loading="lazy"></div><h3>Signature facial</h3><p>Cleanse, exfoliate, mask and massage for instant radiance.</p><span>60 min</span></figure>
+  <figure class="r" style="transition-delay:.1s"><div class="ph"><img decoding="async" src="../img/skin-mask.webp" alt="Client relaxing during a peach clay mask" loading="lazy"></div><h3>Glow peel</h3><p>A gentle enzyme peel that smooths texture and brightens.</p><span>45 min</span></figure>
+  <figure class="r" style="transition-delay:.2s"><div class="ph"><img decoding="async" src="../img/skin-2.webp" alt="Glass serum bottles on peach stone" loading="lazy"></div><h3>Hydration boost</h3><p>Layered serums and LED light for deeply plump skin.</p><span>50 min</span></figure>
  </div>
 </div></section>
 <section class="sec"><div class="wrap">
- <div class="band r"><div class="ph"><img src="../img/skin-3.webp" alt="Swatch of creamy peach skincare" loading="lazy"></div><div class="t"><h2 class="serif">Results you can <i>feel</i>.</h2><p>Every treatment starts with a skin analysis, so we only use what your skin actually needs, and send you home with a simple routine.</p></div></div>
+ <div class="band r"><div class="ph"><img decoding="async" src="../img/skin-3.webp" alt="Swatch of creamy peach skincare" loading="lazy"></div><div class="t"><h2 class="serif">Results you can <i>feel</i>.</h2><p>Every treatment starts with a skin analysis, so we only use what your skin actually needs, and send you home with a simple routine.</p></div></div>
 </div></section>
 <section class="sec" id="visit" style="padding-top:20px"><div class="wrap">
  <h2 class="h2 serif r">Your first visit</h2>
  <div class="steps"><div class="r"><h3>Consult</h3><p>We look closely at your skin and talk through your goals.</p></div><div class="r"><h3>Treat</h3><p>A tailored treatment in a calm, warm room.</p></div><div class="r"><h3>Glow</h3><p>A simple at-home plan to keep results going.</p></div></div>
 </div></section>
 <section class="cta wrap" id="book"><h2 class="serif r">Your glow<br><i>starts here.</i></h2><a class="btn r" href="#">Book a skin consultation</a></section>
-<div class="wrap"><footer><span>Dew Skin Clinic · Melbourne</span><span>Monday - Saturday</span></footer></div>
+<div class="wrap"><footer><span>The Glow Room · Carlton</span><span>Monday - Saturday</span></footer></div>
 <a class="ca-ribbon" href="/#work"><span>✦</span>Concept design by <b>CA Studio</b></a>
 <script>
 (function(){if(!('IntersectionObserver' in window))return;document.documentElement.classList.add('js');

@@ -3,15 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nails Studio - Gel, BIAB and nail art, Melbourne</title>
-<meta name="description" content="Gel, BIAB and nail art in Melbourne.">
+<title>Pearl & Polish | Gel, BIAB and nail art in Fitzroy</title>
+<meta name="description" content="Gel, BIAB and hand-painted nail art in Fitzroy, Melbourne.">
 <meta name="theme-color" content="#FFF1F5">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" href="/fonts/dm-serif-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-ext-400-italic.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-400-italic.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-ext-500-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-ext-600-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-ext-700-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 800; src: url(/fonts/inter-latin-ext-800-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 800; src: url(/fonts/inter-latin-800-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}body{margin:0;overflow-x:clip}img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
@@ -64,15 +77,15 @@ footer{border-top:1px solid #F5C6D6;padding:30px 0 90px;display:flex;justify-con
 </head>
 <body>
 <div class="wrap">
-<nav><a class="logo" href="#">Nails Studio</a><div class="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a class="btn" href="#book">Book online</a></div></nav>
+<nav><a class="logo" href="#">Pearl <span style="font-weight:500;color:#C2185B">&amp;</span> Polish</a><div class="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a class="btn" href="#book">Book online</a></div></nav>
 <section class="hero">
  <div>
   <h1 class="serif up">Your nails,<br>but make it <i>art</i>.</h1>
-  <p class="up" style="animation-delay:.15s">Gel, BIAB and hand-painted nail art in a calm pink studio in Melbourne.</p>
+  <p class="up" style="animation-delay:.15s">Gel, BIAB and hand-painted nail art in a calm pink studio in Fitzroy.</p>
   <div class="up" style="animation-delay:.3s;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#book">Book online</a><a class="btn ghost" href="#gallery">See the sets</a></div>
   <div class="chips up" style="animation-delay:.45s"><span class="chip"><span class="dot" style="background:#F7A8C0"></span>Chrome</span><span class="chip"><span class="dot" style="background:#C2185B"></span>Cherry</span><span class="chip"><span class="dot" style="background:#fff;border:1px solid #F5C6D6"></span>Milky</span><span class="chip"><span class="dot" style="background:#8E1D45"></span>Merlot</span></div>
  </div>
- <div class="heroimg ph up" style="animation-delay:.2s;overflow:visible"><div class="ph" style="border-radius:inherit;height:100%"><img src="../img/nails-hero.webp" alt="Hands with glossy pink chrome manicure on pink silk"></div><div class="tag"><b>Pink chrome</b>this week's favourite</div></div>
+ <div class="heroimg ph up" style="animation-delay:.2s;overflow:visible"><div class="ph" style="border-radius:inherit;height:100%"><img fetchpriority="high" decoding="async" src="../img/nails-hero.webp" alt="Hands with glossy pink chrome manicure on pink silk"></div><div class="tag"><b>Pink chrome</b>this week’s favourite</div></div>
 </section>
 </div>
 <section class="sec" id="services" style="background:#FFE4EC"><div class="wrap">
@@ -87,17 +100,17 @@ footer{border-top:1px solid #F5C6D6;padding:30px 0 90px;display:flex;justify-con
 <section class="sec" id="gallery"><div class="wrap">
  <h2 class="h2 serif r">Fresh sets</h2>
  <div class="gal">
-  <div class="ph a r"><img src="../img/nails-1.webp" alt="Almond nails with pearl accents and gold detail" loading="lazy"></div>
-  <div class="ph b r"><img src="../img/nails-3.webp" alt="Pink and cherry nail polish bottles" loading="lazy"></div>
-  <div class="ph c r"><img src="../img/nails-station.webp" alt="Marble manicure table with pink velvet chair" loading="lazy"></div>
+  <div class="ph a r"><img decoding="async" src="../img/nails-1.webp" alt="Almond nails with pearl accents and gold detail" loading="lazy"></div>
+  <div class="ph b r"><img decoding="async" src="../img/nails-3.webp" alt="Pink and cherry nail polish bottles" loading="lazy"></div>
+  <div class="ph c r"><img decoding="async" src="../img/nails-station.webp" alt="Marble manicure table with pink velvet chair" loading="lazy"></div>
  </div>
 </div></section>
-<div class="wrap"><div class="studio ph r"><img src="../img/nails-band.webp" alt="Hands with glossy pink chrome nails on pink satin" loading="lazy"><div class="over"><p>Chrome, gloss and colour that lasts.</p></div></div></div>
+<div class="wrap"><div class="studio ph r"><img decoding="async" src="../img/nails-band.webp" alt="Hands with glossy pink chrome nails on pink satin" loading="lazy"><div class="over"><p>Chrome, gloss and colour that lasts.</p></div></div></div>
 <section class="cta" id="book"><div class="wrap">
  <h2 class="serif r">Ready for <i>new nails?</i></h2>
  <a class="btn r" href="#">Book online</a>
 </div></section>
-<div class="wrap"><footer><span>Nails Studio · Melbourne</span><span>Open 7 days</span></footer></div>
+<div class="wrap"><footer><span>Pearl &amp; Polish · Fitzroy, Melbourne</span><span>Open 7 days</span></footer></div>
 <a class="ca-ribbon" href="/#work"><span>✦</span>Concept design by <b>CA Studio</b></a>
 <script>
 (function(){if(!('IntersectionObserver' in window))return;document.documentElement.classList.add('js');

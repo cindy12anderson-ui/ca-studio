@@ -3,15 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atelier Rouge - Colour, cut and bridal hair, Melbourne</title>
-<meta name="description" content="Colour-led hair studio in Melbourne.">
+<title>Rouge Hair Co. | Colour, cuts and bridal hair in South Yarra</title>
+<meta name="description" content="Colour-led hair studio in South Yarra, Melbourne.">
 <meta name="theme-color" content="#121011">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face { font-family: 'Anton'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/anton-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Anton'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/anton-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 300; src: url(/fonts/inter-latin-ext-300-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 300; src: url(/fonts/inter-latin-300-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-ext-500-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-ext-600-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-ext-700-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}body{margin:0;overflow-x:clip}img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
@@ -21,6 +32,7 @@ a{color:inherit}
 .ca-ribbon{position:fixed;left:16px;bottom:16px;z-index:50;display:flex;gap:8px;align-items:center;padding:10px 16px;border-radius:99px;background:rgba(43,34,51,.92);color:#FFF9F6;font:500 12px/1 Inter,system-ui,sans-serif;letter-spacing:.02em;text-decoration:none;backdrop-filter:blur(8px);transition:transform .4s}
 .ca-ribbon:hover{transform:translateY(-2px);color:#FFF9F6}.ca-ribbon b{font-weight:700}.ca-ribbon span{color:#F6C9D6}
 
+/*sr*/.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 body{background:#121011;color:#F3ECE6;font-family:Inter,system-ui,sans-serif;font-weight:300}
 .disp{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em}
 @keyframes up{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:none}}
@@ -57,12 +69,13 @@ footer{border-top:1px solid #3A3133;padding:30px 0 90px;display:flex;justify-con
 </head>
 <body>
 <div class="wrap">
-<nav><a class="logo" href="#">ATELIER ROUGE</a><div class="links"><a href="#services">Services</a><a href="#bridal">Bridal</a><a href="#book">Book</a></div></nav>
+<nav><a class="logo" href="#">ROUGE HAIR CO.</a><div class="links"><a href="#services">Services</a><a href="#bridal">Bridal</a><a href="#book">Book</a></div></nav>
 <section class="hero">
  <h1 class="big disp">Rouge</h1>
- <div class="img"><img src="../img/hair-hero.webp" alt="Woman with long, flowing balayage with deep red tones"></div>
+ <div class="img"><img fetchpriority="high" decoding="async" src="../img/hair-hero.webp" alt="Woman with long, flowing balayage with deep red tones"></div>
  <div class="side"><p>Colour-led hair studio. Lived-in balayage, precision cuts and bridal styling.</p><a class="btn" href="#book">Book a chair</a></div>
 </section>
+<h2 class="sr">Services</h2>
 <div class="svc" id="services">
  <div class="r"><h3>Colour</h3><p>Balayage, glossing and rich reds, tailored to your skin tone.</p><span>from $220</span></div>
  <div class="r" style="transition-delay:.08s"><h3>Cut</h3><p>Precision cuts and soft layers that grow out beautifully.</p><span>from $95</span></div>
@@ -70,16 +83,16 @@ footer{border-top:1px solid #3A3133;padding:30px 0 90px;display:flex;justify-con
  <div class="r" style="transition-delay:.24s"><h3>Bridal</h3><p>Trial, wedding morning and the bridal party.</p><span>by consultation</span></div>
 </div>
 <section class="bridal" id="bridal">
- <div class="ph r"><img src="../img/hair-1.webp" alt="Bridal updo with pearl hair pins" loading="lazy"></div>
+ <div class="ph r"><img decoding="async" src="../img/hair-1.webp" alt="Bridal updo with pearl hair pins" loading="lazy"></div>
  <div class="r"><h2 class="disp">The<br>bridal<br>chair</h2><p>From the first trial to the final pin, we design your wedding hair around the dress, the venue and the way you want to feel.</p><a class="btn" href="#book">Plan your bridal hair</a></div>
 </section>
 <div class="strip">
- <div class="ph r"><img src="../img/hair-2.webp" alt="Colourist painting balayage onto foil" loading="lazy"></div>
- <div class="ph r" style="transition-delay:.1s"><img src="../img/hair-foil.webp" alt="Colourist painting highlights onto foil" loading="lazy"></div>
- <div class="ph r" style="transition-delay:.2s"><img src="../img/hair-3.webp" alt="Wooden comb, red colour bowl, brush and serums on black marble" loading="lazy"></div>
+ <div class="ph r"><img decoding="async" src="../img/hair-2.webp" alt="Colourist painting balayage onto foil" loading="lazy"></div>
+ <div class="ph r" style="transition-delay:.1s"><img decoding="async" src="../img/hair-foil.webp" alt="Colourist painting highlights onto foil" loading="lazy"></div>
+ <div class="ph r" style="transition-delay:.2s"><img decoding="async" src="../img/hair-3.webp" alt="Wooden comb, red colour bowl, brush and serums on black marble" loading="lazy"></div>
 </div>
 <section class="cta" id="book"><h2 class="disp r">Your turn</h2><a class="btn r" href="#">Book a chair</a></section>
-<footer><span>Atelier Rouge · Melbourne</span><span>Wednesday - Saturday</span></footer>
+<footer><span>Rouge Hair Co. · South Yarra</span><span>Wednesday - Saturday</span></footer>
 </div>
 <a class="ca-ribbon" href="/#work"><span>✦</span>Concept design by <b>CA Studio</b></a>
 <script>

@@ -3,15 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ember & Oat - Specialty coffee and bakery, Melbourne</title>
-<meta name="description" content="Slow coffee, warm mornings.">
+<title>Ember & Oat | Specialty coffee and bakery in Brunswick</title>
+<meta name="description" content="Specialty coffee and a morning bakery in Brunswick, Melbourne.">
 <meta name="theme-color" content="#F5EBDD">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" href="/fonts/dm-serif-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'DM Serif Display'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-ext-400-italic.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'DM Serif Display'; font-style: italic; font-display: swap; font-weight: 400; src: url(/fonts/dm-serif-display-latin-400-italic.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-ext-400-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 400; src: url(/fonts/inter-latin-400-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-ext-500-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 500; src: url(/fonts/inter-latin-500-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-ext-600-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 600; src: url(/fonts/inter-latin-600-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-ext-700-normal.woff2) format('woff2'); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-display: swap; font-weight: 700; src: url(/fonts/inter-latin-700-normal.woff2) format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}body{margin:0;overflow-x:clip}img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
@@ -60,7 +71,7 @@ footer{padding:34px 0 90px;display:flex;justify-content:space-between;flex-wrap:
 </head>
 <body>
 <header class="hero">
- <img src="../img/cafe-hero.webp" alt="Warm café interior with a timber counter and terracotta cups">
+ <img fetchpriority="high" decoding="async" src="../img/cafe-hero.webp" alt="Warm café interior with a timber counter and terracotta cups">
  <div class="wrap" style="width:100%"><nav><a class="logo" href="#">Ember <i>&amp;</i> Oat</a><div class="links"><a href="#menu">Menu</a><a href="#visit">Visit</a></div></nav></div>
  <div class="c wrap"><div class="steam" aria-hidden="true"><span></span><span style="animation-delay:.8s"></span><span style="animation-delay:1.6s"></span></div><h1 class="serif">Slow coffee,<br><i>warm</i> mornings.</h1><p>Specialty coffee · Bakery</p><a class="btn" href="#menu" style="animation:up 1.4s .6s both">See the menu</a></div>
 </header>
@@ -68,15 +79,15 @@ footer{padding:34px 0 90px;display:flex;justify-content:space-between;flex-wrap:
  <div class="menu"><div class="r"><h3>Coffee</h3><div class="row"><span>Flat white<small>Our house blend, silky milk</small></span><span class="d"></span><span>5.5</span></div><div class="row"><span>Long black<small>Double shot over hot water</small></span><span class="d"></span><span>5.0</span></div><div class="row"><span>Filter of the day<small>Rotating single origin</small></span><span class="d"></span><span>6.0</span></div><div class="row"><span>Iced oat latte<small>Oat milk, over ice</small></span><span class="d"></span><span>6.5</span></div></div><div class="r" style="transition-delay:.1s"><h3>Bakery</h3><div class="row"><span>Butter croissant<small>Baked every morning</small></span><span class="d"></span><span>5.5</span></div><div class="row"><span>Almond croissant<small>Twice baked, frangipane</small></span><span class="d"></span><span>7.0</span></div><div class="row"><span>Pain au chocolat<small>Dark chocolate, flaky</small></span><span class="d"></span><span>6.0</span></div><div class="row"><span>Toast &amp; jam<small>Sourdough, seasonal jam</small></span><span class="d"></span><span>9.0</span></div></div></div>
 </section>
 <section class="wrap" style="padding-bottom:110px"><div class="bento">
- <div class="ph a r"><img src="../img/cafe-2.webp" alt="Barista pouring latte art" loading="lazy"></div>
- <div class="ph r" style="transition-delay:.1s"><img src="../img/cafe-1.webp" alt="Flat white with leaf latte art on timber" loading="lazy"></div>
- <div class="ph r" style="transition-delay:.2s"><img src="../img/cafe-3.webp" alt="Fresh croissants and pastries on linen" loading="lazy"></div>
+ <div class="ph a r"><img decoding="async" src="../img/cafe-2.webp" alt="Barista pouring latte art" loading="lazy"></div>
+ <div class="ph r" style="transition-delay:.1s"><img decoding="async" src="../img/cafe-1.webp" alt="Flat white with leaf latte art on timber" loading="lazy"></div>
+ <div class="ph r" style="transition-delay:.2s"><img decoding="async" src="../img/cafe-3.webp" alt="Fresh croissants and pastries on linen" loading="lazy"></div>
 </div></section>
 <section class="wrap" id="visit" style="padding-bottom:110px"><div class="visit">
  <div class="box r"><h3>Opening hours</h3><p>Monday - Friday · 7am - 3pm<br>Saturday - Sunday · 8am - 3pm</p></div>
- <div class="box dark r" style="transition-delay:.1s"><h3>Find us</h3><p>A little corner café in Melbourne.<br>Walk-ins only. Pull up a stool.</p></div>
+ <div class="box dark r" style="transition-delay:.1s"><h3>Find us</h3><p>A little corner café in Brunswick.<br>Walk-ins only. Pull up a stool.</p></div>
 </div></section>
-<div class="wrap"><footer><span>Ember &amp; Oat · Melbourne</span><span>See you in the morning</span></footer></div>
+<div class="wrap"><footer><span>Ember &amp; Oat · Brunswick</span><span>See you in the morning</span></footer></div>
 <a class="ca-ribbon" href="/#work"><span>✦</span>Concept design by <b>CA Studio</b></a>
 <script>
 (function(){if(!('IntersectionObserver' in window))return;document.documentElement.classList.add('js');
