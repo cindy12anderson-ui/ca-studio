@@ -100,8 +100,14 @@ a{color:#2B2233}a:hover{color:#7A4B8C}
 .motion .cta-note,.motion .cta-btn{opacity:0;transform:translateY(20px);transition:opacity 1s .7s,transform 1s .7s cubic-bezier(.2,.8,.2,1)}
 .motion .cta-note{transition-delay:.9s}
 .motion #contact.play .cta-note,.motion #contact.play .cta-btn{opacity:1;transform:none}
-.faq details{border-radius:24px;background:#ffffff;padding:0 28px;margin-bottom:12px;transition:background .5s}
-.faq details[open]{background:#FAD7E0}
+.faq details{border-radius:24px;background:var(--bg);padding:0 28px;margin-bottom:12px;border:1px solid var(--bd);transition:background .5s,box-shadow .5s,transform .5s}
+.faq details:hover{transform:translateY(-2px);box-shadow:0 16px 30px -22px rgba(43,34,51,.35)}
+.faq details[open]{background:var(--op);box-shadow:0 18px 36px -26px rgba(43,34,51,.4)}
+.faq details:nth-child(5n+1){--bg:#FCE8EE;--bd:#F6CCD9;--op:#FAD7E0}
+.faq details:nth-child(5n+2){--bg:#F1ECFB;--bd:#DFD4F4;--op:#E4DBF6}
+.faq details:nth-child(5n+3){--bg:#EAF6F0;--bd:#CDE9DB;--op:#D8EFE5}
+.faq details:nth-child(5n+4){--bg:#FDF0E6;--bd:#F7D9C3;--op:#FCE3D2}
+.faq details:nth-child(5n+5){--bg:#FBF5DD;--bd:#F1E5AE;--op:#FBF1C7}
 .faq summary{list-style:none;cursor:pointer;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:19px;font-weight:600;color:#2B2233}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";flex:none;font-size:28px;font-weight:300;line-height:1;color:#A8436A;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
@@ -109,7 +115,6 @@ a{color:#2B2233}a:hover{color:#7A4B8C}
 .faq summary:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:12px}
 .faq p{margin:0;padding:0 0 26px;font-size:16px;line-height:1.7;color:#4A3E4F;max-width:640px}
 @media (max-width:640px){.faq details{padding:0 20px}.faq summary{font-size:17px}.drift{display:none}.ctabox .blob{width:200px!important;height:200px!important}.ctabox .orbit,.ctabox .spinBack{width:420px!important;height:420px!important;margin:-210px 0 0 -210px!important}}
-#work,#services,#process,#faq,#contact,footer{content-visibility:auto;contain-intrinsic-size:auto 900px}
 .marquee{will-change:transform}
 @supports (animation-timeline: view()){
 .reveal{animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
@@ -209,22 +214,22 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
         </a>
 <a class="tile reveal" href="/work/nails/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #FAD7E0; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
           <div class="unveil" style="position: relative">
-            <div class="frame"><div style="border-radius:14px;overflow:hidden;background:#fff"><div style="display:flex;align-items:center;gap:6px;padding:9px 12px;background:#F3F0F1;border-bottom:1px solid rgba(0,0,0,.06)"><span style="width:9px;height:9px;border-radius:50%;background:#E3A3A9"></span><span style="width:9px;height:9px;border-radius:50%;background:#E9D2A6"></span><span style="width:9px;height:9px;border-radius:50%;background:#B9D4BE"></span><span style="margin-left:10px;flex:1;max-width:240px;padding:4px 12px;border-radius:99px;background:#fff;font-size:11px;color:#5F585A;white-space:nowrap;overflow:hidden">pearl &amp; polish</span></div><img decoding="async" src="/work/nails.webp" srcset="/work/nails-640.webp 640w, /work/nails.webp 1280w" sizes="(max-width: 900px) 92vw, 600px" alt="Homepage of the Pearl &amp; Polish nail bar website" loading="lazy" width="1280" height="800" style="display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover"></div></div>
+            <div class="frame"><div style="border-radius:14px;overflow:hidden;background:#fff"><div style="display:flex;align-items:center;gap:6px;padding:9px 12px;background:#F3F0F1;border-bottom:1px solid rgba(0,0,0,.06)"><span style="width:9px;height:9px;border-radius:50%;background:#E3A3A9"></span><span style="width:9px;height:9px;border-radius:50%;background:#E9D2A6"></span><span style="width:9px;height:9px;border-radius:50%;background:#B9D4BE"></span><span style="margin-left:10px;flex:1;max-width:240px;padding:4px 12px;border-radius:99px;background:#fff;font-size:11px;color:#5F585A;white-space:nowrap;overflow:hidden">nails &amp; gel</span></div><img decoding="async" src="/work/nails.webp" srcset="/work/nails-640.webp 640w, /work/nails.webp 1280w" sizes="(max-width: 900px) 92vw, 600px" alt="Homepage of the Nails &amp; Gel Salon website" loading="lazy" width="1280" height="800" style="display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover"></div></div>
             <span class="view" aria-hidden="true">View ↗</span>
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">02</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Pearl &amp; Polish</span><span style="font-size: 14px; color: #4A3E4F">Nail bar · Fitzroy <span style="color: #A8436A">✦</span> Online booking</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Nails &amp; Gel Salon</span><span style="font-size: 14px; color: #4A3E4F">Nail salon <span style="color: #A8436A">✦</span> Online booking</span></span>
           </div>
         </a>
 <a class="tile reveal" href="/work/spa/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #DFE8D8; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
           <div class="unveil" style="position: relative">
-            <div class="frame"><div style="border-radius:14px;overflow:hidden;background:#fff"><div style="display:flex;align-items:center;gap:6px;padding:9px 12px;background:#F3F0F1;border-bottom:1px solid rgba(0,0,0,.06)"><span style="width:9px;height:9px;border-radius:50%;background:#E3A3A9"></span><span style="width:9px;height:9px;border-radius:50%;background:#E9D2A6"></span><span style="width:9px;height:9px;border-radius:50%;background:#B9D4BE"></span><span style="margin-left:10px;flex:1;max-width:240px;padding:4px 12px;border-radius:99px;background:#fff;font-size:11px;color:#5F585A;white-space:nowrap;overflow:hidden">sage &amp; stone</span></div><img decoding="async" src="/work/spa.webp" srcset="/work/spa-640.webp 640w, /work/spa.webp 1280w" sizes="(max-width: 900px) 92vw, 600px" alt="Homepage of the Sage &amp; Stone Day Spa website" loading="lazy" width="1280" height="800" style="display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover"></div></div>
+            <div class="frame"><div style="border-radius:14px;overflow:hidden;background:#fff"><div style="display:flex;align-items:center;gap:6px;padding:9px 12px;background:#F3F0F1;border-bottom:1px solid rgba(0,0,0,.06)"><span style="width:9px;height:9px;border-radius:50%;background:#E3A3A9"></span><span style="width:9px;height:9px;border-radius:50%;background:#E9D2A6"></span><span style="width:9px;height:9px;border-radius:50%;background:#B9D4BE"></span><span style="margin-left:10px;flex:1;max-width:240px;padding:4px 12px;border-radius:99px;background:#fff;font-size:11px;color:#5F585A;white-space:nowrap;overflow:hidden">sōl day spa</span></div><img decoding="async" src="/work/spa.webp" srcset="/work/spa-640.webp 640w, /work/spa.webp 1280w" sizes="(max-width: 900px) 92vw, 600px" alt="Homepage of the Sōl Day Spa website" loading="lazy" width="1280" height="800" style="display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover"></div></div>
             <span class="view" aria-hidden="true">View ↗</span>
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">03</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Sage &amp; Stone Day Spa</span><span style="font-size: 14px; color: #4A3E4F">Day spa · Hawthorn <span style="color: #A8436A">✦</span> Ritual menu</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Sōl Day Spa</span><span style="font-size: 14px; color: #4A3E4F">Day spa <span style="color: #A8436A">✦</span> Ritual menu</span></span>
           </div>
         </a>
 <a class="tile reveal" href="/work/hair/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #F3DADA; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
@@ -234,7 +239,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">04</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Rouge Hair Co.</span><span style="font-size: 14px; color: #4A3E4F">Hair salon · South Yarra <span style="color: #A8436A">✦</span> Colour &amp; bridal</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Rouge Hair Co.</span><span style="font-size: 14px; color: #4A3E4F">Hair salon <span style="color: #A8436A">✦</span> Colour &amp; bridal</span></span>
           </div>
         </a>
 <a class="tile reveal" href="/work/laser/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #E4DBF6; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
@@ -244,7 +249,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">05</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Lumière Laser &amp; Wax</span><span style="font-size: 14px; color: #4A3E4F">Laser clinic · Richmond <span style="color: #A8436A">✦</span> Packages &amp; FAQ</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Lumière Laser &amp; Wax</span><span style="font-size: 14px; color: #4A3E4F">Laser &amp; waxing <span style="color: #A8436A">✦</span> Packages &amp; FAQ</span></span>
           </div>
         </a>
 <a class="tile reveal" href="/work/skin/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #FCE3D2; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
@@ -254,7 +259,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">06</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">The Glow Room</span><span style="font-size: 14px; color: #4A3E4F">Skin clinic · Carlton <span style="color: #A8436A">✦</span> Treatments</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">The Glow Room</span><span style="font-size: 14px; color: #4A3E4F">Facials <span style="color: #A8436A">✦</span> Treatments</span></span>
           </div>
         </a>
 <a class="tile reveal" href="/work/dental/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #DDEBF7; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
@@ -264,7 +269,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">07</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Brightside Dental</span><span style="font-size: 14px; color: #4A3E4F">Dental · Prahran <span style="color: #A8436A">✦</span> Live appointments</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Brightside Dental</span><span style="font-size: 14px; color: #4A3E4F">Dental <span style="color: #A8436A">✦</span> Live appointments</span></span>
           </div>
         </a>
 <a class="tile reveal" href="/work/cafe/" style="text-decoration: none; color: inherit; border-radius: 32px; background: #F3E7D7; padding: 20px 20px 26px; display: flex; flex-direction: column; gap: 20px">
@@ -274,7 +279,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
           </div>
           <div style="display: flex; gap: 14px; align-items: flex-start; padding: 0 6px">
             <span class="num" style="font-family: 'Instrument Serif', serif; font-size: 40px; line-height: 0.85; color: rgba(43,34,51,0.55)">08</span>
-            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Ember &amp; Oat</span><span style="font-size: 14px; color: #4A3E4F">Café · Brunswick <span style="color: #A8436A">✦</span> Menu &amp; hours</span></span>
+            <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', serif; font-size: 32px; line-height: 1">Ember &amp; Oat</span><span style="font-size: 14px; color: #4A3E4F">Café <span style="color: #A8436A">✦</span> Menu &amp; hours</span></span>
           </div>
         </a>
     </div>
@@ -305,7 +310,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
       <div class="tile reveal" style="grid-column: span 2; border-radius: 32px; background: #FCE3D2; padding: 32px; display: flex; flex-direction: column; gap: 14px">
         <span style="display: flex; justify-content: space-between; align-items: center"><span class="num" style="font-family: 'Instrument Serif', serif; font-size: 36px; color: rgba(43,34,51,0.55)">04</span><span class="arr" style="font-size: 26px">→</span></span>
         <span style="font-size: 22px; font-weight: 600">Updates &amp; care</span>
-        <span style="font-size: 15px; line-height: 1.6; color: #3B3540">New prices, services, photos and offers, updated for you whenever you need.</span>
+        <span style="font-size: 15px; line-height: 1.6; color: #3B3540">A monthly care plan: new prices, services, photos and offers, updated for you whenever you need.</span>
       </div>
     </div>
   </section>
@@ -331,7 +336,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
       <div class="tile reveal" style="border-radius: 28px; border: 1.5px solid #2B2233; padding: 30px; display: flex; flex-direction: column; gap: 12px">
         <span style="width: 44px; height: 44px; border-radius: 50%; background: #FBF1C7; display: flex; align-items: center; justify-content: center; font-weight: 700">4</span>
         <span style="font-size: 22px; font-weight: 600">Launch &amp; care</span>
-        <span style="font-size: 15px; line-height: 1.6; color: #4A3E4F">Live on your domain, with updates on call.</span>
+        <span style="font-size: 15px; line-height: 1.6; color: #4A3E4F">Live on your domain, with an optional monthly care plan for updates.</span>
       </div>
     </div>
     <p class="reveal" style="margin: 0; display: flex; gap: 10px; align-items: center; font-size: 15px; color: #4A3E4F"><span class="twinkle" style="color: #A8436A">✦</span>Several projects in the portfolio are concept designs, created exactly the way your free demo would be.</p>
@@ -343,11 +348,11 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
       <p style="margin: 0; max-width: 340px; font-size: 16px; line-height: 1.65; color: #4A3E4F">Anything else? Ask me in your demo request.</p>
     </div>
     <div class="faq" style="flex: 2 1 520px; min-width: 0">
-      <details class="reveal" open><summary>How much does a website cost?</summary><p>Every project has a fixed price, quoted after your free demo. You know exactly what you’re paying before anything starts, with no hourly surprises.</p></details>
+      <details class="reveal" open><summary>How much does a website cost?</summary><p>Your website is a one-time fixed price, quoted after your free demo. You know exactly what you’re paying before anything starts, with no hourly surprises.</p></details>
       <details class="reveal"><summary>What do I need to get started?</summary><p>Just your business name and your Instagram or current website. I’ll design a working demo from there, and we refine the words and photos together.</p></details>
       <details class="reveal"><summary>Can you connect my booking system?</summary><p>Yes. I connect the platform you already use, like Fresha or Square, so clients can book in a tap. Google reviews and local search come built in.</p></details>
       <details class="reveal"><summary>Will it look good on phones?</summary><p>Every site is designed mobile-first and tested on phones, tablets and desktops, because that’s where most of your clients will find you.</p></details>
-      <details class="reveal"><summary>Who updates the site after launch?</summary><p>I do. New prices, services, photos and seasonal offers are handled for you, so your site never goes out of date.</p></details>
+      <details class="reveal"><summary>Can I keep updating my site after launch?</summary><p>Of course! With a monthly care plan, new prices, services, photos and seasonal offers are handled for you, so your site never goes out of date.</p></details>
     </div>
   </section>
 
@@ -374,7 +379,7 @@ a:focus-visible{outline:2px solid #7A4B8C;outline-offset:4px;border-radius:99px}
       <span style="position: relative; width: 40px; height: 48px; border-radius: 20px 20px 9px 9px; background: #F6C9D6; display: flex; align-items: center; justify-content: center"><span style="font-family: 'Mrs Saint Delafield', cursive; font-size: 36px; line-height: 1; margin: 10px 0 0 -3px; color: #2B2233">Ca</span></span>
       <span>© 2026 CA · Cindy Andruson Web Design Studio · Melbourne</span>
     </span>
-    <a href="mailto:andrusoncindy@gmail.com">andrusoncindy@gmail.com</a>
+    <span style="display: flex; gap: 22px; flex-wrap: wrap"><a href="/privacy">Privacy</a><a href="mailto:andrusoncindy@gmail.com">andrusoncindy@gmail.com</a></span>
   </footer>
 </main>
 <script>
